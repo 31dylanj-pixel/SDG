@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E5243B">
+    <meta name="description" content="Explore the 17 United Nations Sustainable Development Goals.">
+    <title>The Global Goals | SDG Showcase</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+        <a href="#" class="brand">
+            <span class="brand-mark">17</span>
+            <span>THE GLOBAL GOALS</span>
+        </a>
+
+        <div class="header-right">
+            <span class="edition">2030 AGENDA</span>
+            <button class="autoplay-toggle" id="autoplayToggle" aria-label="Pause slideshow">
+                <svg id="playIcon" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 5V19M16 5V19" stroke="currentColor"
+                          stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+                <span id="autoplayLabel">PAUSE</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="showcase">
+
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span>UNITED NATIONS</span>
+                <span class="label-line"></span>
+            </div>
+
+            <div class="goal-stage" id="goalStage">
+
+                <div class="goal-content" id="goalContent">
+
+                    <div class="goal-meta">
+                        <span class="goal-category">SUSTAINABLE DEVELOPMENT GOAL</span>
+                        <span class="goal-number-small" id="goalNumber">01 / 17</span>
+                    </div>
+
+                    <div class="goal-main">
+                        <div class="goal-number" id="goalNumberLarge">01</div>
+
+                        <div class="goal-text">
+                            <div class="goal-eyebrow">GOAL <span id="goalIndex">01</span></div>
+                            <h1 id="goalTitle">NO POVERTY</h1>
+                            <p id="goalDescription">
+                                End poverty in all its forms everywhere.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="goal-bottom">
+                        <span class="goal-tag" id="goalTag">END POVERTY</span>
+                        <span class="goal-counter" id="goalCounter">01 — 17</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="navigation">
+
+                <button class="nav-button previous" id="previousBtn"
+                        aria-label="Previous goal">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12H5M12 19L5 12L12 5"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="progress-area">
+                    <div class="progress-info">
+                        <span>EXPLORE THE GOALS</span>
+                        <span id="progressText">1 OF 17</span>
+                    </div>
+
+                    <div class="progress-track" id="progressTrack"
+                         aria-label="Select a sustainable development goal">
+                    </div>
+                </div>
+
+                <button class="nav-button next" id="nextBtn"
+                        aria-label="Next goal">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M12 5L19 12L12 19"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            <div class="bottom-caption">
+                <span>17 GOALS. ONE SHARED FUTURE.</span>
+                <span>SCROLL THROUGH THE 2030 AGENDA</span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <span>THE SUSTAINABLE DEVELOPMENT GOALS</span>
+        <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener">
+            EXPLORE ON THE UN WEBSITE ↗
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
